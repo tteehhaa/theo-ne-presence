@@ -27,11 +27,6 @@ const content = {
     venture2Title: "서울 프록시",
     venture2Body:
       "해외 거주 자산가, 교포 및 주재원을 대상으로 서울 주요 거점 자산(부동산·금융)에 대한 맞춤형 실황 분석 리포트를 비대면으로 신속하게 제공하여 안정적인 초기 현금흐름을 확보하고, 향후 자산 코칭, 중개, 매매, 임대차 관리 및 공간 개발 프로젝트 매니지먼트(PM)를 아우르는 프리미엄 자산 자문 플랫폼으로 도약합니다.",
-    tasteLabel: "Subtle Taste",
-    taste1Title: "French Literature & Art",
-    taste1Body: "고전 프랑스 문학과 학술 연구서에서 얻는 텍스트적 영감.",
-    taste2Title: "Mindfulness & Motion",
-    taste2Body: "마음의 평온을 찾는 요가 / 명상, 그리고 설판 위의 다이내믹한 스키 라이프.",
     addrLabel: "A.",
     address: "서울시 강남구 봉은사로 524, 웨스틴 서울 파르나스 B269-11",
     visit: "Visit",

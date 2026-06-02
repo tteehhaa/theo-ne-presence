@@ -26,8 +26,7 @@ const content = {
   KO: {
     contact: "Contact",
     heroTagline: "리걸 테크 & 크로스보더 오퍼레이션",
-    heroEntity: "주식회사 테오네",
-    heroStatus: "[ 법인 설립 준비 중 ]",
+    heroEntity: "법인 설립 준비 중",
     venturesLabel: "Professional Venture",
     venture1Title: "서울 데스크",
     venture1Body:
@@ -46,8 +45,7 @@ const content = {
   EN: {
     contact: "Contact",
     heroTagline: "LEGAL TECH & CROSS-BORDER OPERATIONS",
-    heroEntity: "THÉONÉ Co., Ltd.",
-    heroStatus: "[ In Development ]",
+    heroEntity: "In Development",
     venturesLabel: "Professional Venture",
     venture1Title: "Seoul Desk",
     venture1Body:
@@ -114,9 +112,6 @@ function Index() {
           <div className="mt-12 md:mt-16 mx-auto w-24 divider-thin" />
           <p className="mt-10 md:mt-12 font-serif text-lg md:text-xl">
             {t.heroEntity}
-          </p>
-          <p className="mt-3 text-xs tracking-[0.2em] text-muted-foreground font-bold">
-            {t.heroStatus}
           </p>
         </div>
       </section>

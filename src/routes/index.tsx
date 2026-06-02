@@ -115,9 +115,6 @@ function Index() {
           <p className="mt-10 md:mt-12 font-serif text-lg md:text-xl">
             {t.heroEntity}
           </p>
-          <p className="mt-3 text-xs tracking-[0.2em] text-muted-foreground font-bold">
-            {t.heroStatus}
-          </p>
         </div>
       </section>
 

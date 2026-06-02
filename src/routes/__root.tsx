@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "THÉONÉ" },
+      { name: "description", content: "LEGAL TECH & CROSS-BORDER OPERATIONS" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "THÉONÉ" },
+      { property: "og:description", content: "LEGAL TECH & CROSS-BORDER OPERATIONS" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "THÉONÉ" },
+      { name: "twitter:description", content: "LEGAL TECH & CROSS-BORDER OPERATIONS" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/5eaMARu9C8ULy4CrEGdLnPmM9Ck1/social-images/social-1780375253876-Screenshot_2026-06-02_at_1.40.45_PM.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/5eaMARu9C8ULy4CrEGdLnPmM9Ck1/social-images/social-1780375253876-Screenshot_2026-06-02_at_1.40.45_PM.webp" },
     ],
     links: [
       {

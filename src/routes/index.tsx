@@ -6,16 +6,16 @@ type Lang = "KO" | "EN";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "THÉONÉ — Cross-Border Operations & Asset Proxy Care" },
+      { title: "THÉONÉ — LEGAL TECH & CROSS-BORDER OPERATIONS" },
       {
         name: "description",
         content:
-          "THÉONÉ Co., Ltd. — Premium cross-border business operations and asset proxy care, governed by accountable human experts.",
+          "THÉONÉ Co., Ltd. — Premium legal tech and cross-border operations, governed by accountable human experts.",
       },
       { property: "og:title", content: "THÉONÉ" },
       {
         property: "og:description",
-        content: "Cross-Border Operations & Asset Proxy Care.",
+        content: "LEGAL TECH & CROSS-BORDER OPERATIONS.",
       },
     ],
   }),
@@ -25,8 +25,9 @@ export const Route = createFileRoute("/")({
 const content = {
   KO: {
     contact: "Contact",
-    heroTagline: "글로벌 비즈니스 오퍼레이션 및 자산 프록시 케어",
+    heroTagline: "리걸 테크 & 크로스보더 오퍼레이션",
     heroEntity: "주식회사 테오네",
+    heroStatus: "[ 법인 설립 준비 중 ]",
     venturesLabel: "Professional Venture",
     venture1Title: "서울 데스크",
     venture1Body:
@@ -44,8 +45,9 @@ const content = {
   },
   EN: {
     contact: "Contact",
-    heroTagline: "Cross-Border Operations & Asset Proxy Care",
+    heroTagline: "LEGAL TECH & CROSS-BORDER OPERATIONS",
     heroEntity: "THÉONÉ Co., Ltd.",
+    heroStatus: "[ In Development ]",
     venturesLabel: "Professional Venture",
     venture1Title: "Seoul Desk",
     venture1Body:
@@ -56,7 +58,7 @@ const content = {
     leadershipLabel: "Leadership Profile",
     leadershipBody:
       "Seamlessly integrating an engineer's structural precision with a New York attorney's international legal expertise to govern THÉONÉ's cross-border business operations (LPO) and premium proxy care infrastructure. Creating an ecosystem of trust driven by accountable human experts.",
-    leadershipName: "Hana Beom, Managing Director & Attorney-at-Law, NY",
+    leadershipName: "Hana Beom, CEO & Attorney-at-Law, NY",
     addrLabel: "A.",
     address: "B269-11, Bongeunsa-ro 524, Gangnam-gu, Seoul, Republic of Korea",
     visit: "Visit",
@@ -112,6 +114,9 @@ function Index() {
           <div className="mt-12 md:mt-16 mx-auto w-24 divider-thin" />
           <p className="mt-10 md:mt-12 font-serif text-lg md:text-xl">
             {t.heroEntity}
+          </p>
+          <p className="mt-3 text-xs tracking-[0.2em] text-muted-foreground">
+            {t.heroStatus}
           </p>
         </div>
       </section>

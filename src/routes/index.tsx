@@ -51,13 +51,13 @@ const content = {
     venturesLabel: "Professional Venture",
     venture1Title: "Seoul Desk",
     venture1Body:
-      "Generating immediate cash flow through tech-driven operational communication and streamlined international NDA reviews, sequentially expanding into a high-end global concierge platform that manages end-to-end cross-border inbound/outbound business administration and corporate operations.",
+      "Leveraging legal tech to provide one-stop support for cross-border NDA reviews and law firm network coordination, building a cross-border business operations (LPO) service for inbound and outbound clients.",
     venture2Title: "Seoul Proxy",
     venture2Body:
-      "Securing stable initial cash flow by delivering bespoke, non-face-to-face asset status reports of prime properties in Seoul for non-residents and overseas diaspora, while scaling into a comprehensive proxy platform that encompasses premium asset coaching, leasing, and high-end property development project management (PM).",
+      "Delivering bespoke, non-face-to-face asset status reports on prime Seoul properties for non-residents and overseas Koreans, while scaling into a premium asset consulting service for domestic asset management.",
     leadershipLabel: "Leadership Profile",
     leadershipBody:
-      "Seamlessly integrating an engineer's structural precision with a New York attorney's international legal expertise to govern THÉONÉ's cross-border business operations (LPO) and premium proxy care infrastructure. Creating an ecosystem of trust driven by accountable human experts.",
+      "Combining an engineer's sharp eye for trends and market analysis with a New York attorney's international legal expertise to lead THÉONÉ's cross-border operations (LPO) and asset consulting infrastructure. Committed to business partnerships built on expertise and trust.",
     leadershipName: "Hana Beom, CEO & Attorney-at-Law, NY",
     addrLabel: "A.",
     address: "B269-11, Bongeunsa-ro 524, Gangnam-gu, Seoul, Republic of Korea",

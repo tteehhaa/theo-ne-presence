@@ -27,11 +27,6 @@ const content = {
     venture2Title: "서울 프록시",
     venture2Body:
       "해외 거주 자산가, 교포 및 주재원을 대상으로 서울 주요 거점 자산(부동산·금융)에 대한 맞춤형 실황 분석 리포트를 비대면으로 신속하게 제공하여 안정적인 초기 현금흐름을 확보하고, 향후 자산 코칭, 중개, 매매, 임대차 관리 및 공간 개발 프로젝트 매니지먼트(PM)를 아우르는 프리미엄 자산 자문 플랫폼으로 도약합니다.",
-    tasteLabel: "Subtle Taste",
-    taste1Title: "French Literature & Art",
-    taste1Body: "고전 프랑스 문학과 학술 연구서에서 얻는 텍스트적 영감.",
-    taste2Title: "Mindfulness & Motion",
-    taste2Body: "마음의 평온을 찾는 요가 / 명상, 그리고 설판 위의 다이내믹한 스키 라이프.",
     addrLabel: "A.",
     address: "서울시 강남구 봉은사로 524, 웨스틴 서울 파르나스 B269-11",
     visit: "Visit",
@@ -47,11 +42,6 @@ const content = {
     venture2Title: "Seoul Proxy",
     venture2Body:
       "Securing stable initial cash flow by delivering bespoke, non-face-to-face asset status reports of prime properties in Seoul for non-residents and overseas diaspora, while scaling into a comprehensive proxy platform that encompasses premium asset coaching, leasing, and high-end property development project management (PM).",
-    tasteLabel: "Subtle Taste",
-    taste1Title: "French Literature & Art",
-    taste1Body: "Textual inspiration drawn from classical French literature and scholarly research.",
-    taste2Title: "Mindfulness & Motion",
-    taste2Body: "Yoga and meditation for inner stillness, and the dynamic life of skiing across alpine snow.",
     addrLabel: "A.",
     address: "B269-11, Bongeunsa-ro 524, Gangnam-gu, Seoul, Republic of Korea",
     visit: "Visit",
@@ -135,23 +125,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Subtle Taste */}
-      <section className="px-6 md:px-16 lg:px-24 pb-32 md:pb-48">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-baseline justify-between mb-10">
-            <span className="text-[11px] uppercase tracking-[0.32em] text-muted-foreground">
-              02 / {t.tasteLabel}
-            </span>
-          </div>
-          <div className="divider-line mb-16 md:mb-20" />
-
-          <div className="border-t border-b">
-            <TasteRow title={t.taste1Title} body={t.taste1Body} index="i." />
-            <div className="divider-thin" />
-            <TasteRow title={t.taste2Title} body={t.taste2Body} index="ii." />
-          </div>
-        </div>
-      </section>
 
       {/* Footer / Contact */}
       <footer id="contact" className="px-6 md:px-16 lg:px-24 pb-16 md:pb-24">
@@ -236,19 +209,6 @@ function VentureCard({
   );
 }
 
-function TasteRow({ title, body, index }: { title: string; body: string; index: string }) {
-  return (
-    <div className="grid grid-cols-12 gap-4 md:gap-8 py-8 md:py-10 items-baseline">
-      <span className="col-span-1 font-serif text-sm md:text-base text-muted-foreground">
-        {index}
-      </span>
-      <h3 className="col-span-11 md:col-span-4 font-serif text-xl md:text-2xl">{title}</h3>
-      <p className="col-start-2 col-span-11 md:col-span-7 md:col-start-auto text-[14px] md:text-[15px] leading-[1.8] text-foreground/80">
-        {body}
-      </p>
-    </div>
-  );
-}
 
 function FooterField({ label, children }: { label: string; children: React.ReactNode }) {
   return (

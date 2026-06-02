@@ -6,10 +6,17 @@ type Lang = "KO" | "EN";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "THÉONÉ — Hana Beom, CEO · Attorney-at-Law, NY" },
-      { name: "description", content: "THÉONÉ — Premium cross-border legal and asset advisory ventures led by Hana Beom, Attorney-at-Law, NY." },
+      { title: "THÉONÉ — Cross-Border Operations & Asset Proxy Care" },
+      {
+        name: "description",
+        content:
+          "THÉONÉ Co., Ltd. — Premium cross-border business operations and asset proxy care, governed by accountable human experts.",
+      },
       { property: "og:title", content: "THÉONÉ" },
-      { property: "og:description", content: "Premium cross-border legal and asset advisory ventures." },
+      {
+        property: "og:description",
+        content: "Cross-Border Operations & Asset Proxy Care.",
+      },
     ],
   }),
   component: Index,
@@ -18,8 +25,8 @@ export const Route = createFileRoute("/")({
 const content = {
   KO: {
     contact: "Contact",
-    heroName: "범하나",
-    heroTitle: "대표이사 · 뉴욕주 변호사",
+    heroTagline: "글로벌 비즈니스 오퍼레이션 및 자산 프록시 케어",
+    heroEntity: "주식회사 테오네",
     venturesLabel: "Professional Venture",
     venture1Title: "서울 데스크",
     venture1Body:
@@ -27,14 +34,18 @@ const content = {
     venture2Title: "서울 프록시",
     venture2Body:
       "해외 거주 자산가, 교포 및 주재원을 대상으로 서울 주요 거점 자산(부동산·금융)에 대한 맞춤형 실황 분석 리포트를 비대면으로 신속하게 제공하여 안정적인 초기 현금흐름을 확보하고, 향후 자산 코칭, 중개, 매매, 임대차 관리 및 공간 개발 프로젝트 매니지먼트(PM)를 아우르는 프리미엄 자산 자문 플랫폼으로 도약합니다.",
+    leadershipLabel: "Leadership Profile",
+    leadershipBody:
+      "기술적 시스템을 설계하던 엔지니어의 정밀함과, 글로벌 법리를 조율하는 뉴욕주 미국 변호사의 전문성을 결합하여 주식회사 테오네의 글로벌 비즈니스 오퍼레이션(LPO) 인프라 및 해외 자산가 대상 프록시 케어 시스템을 총괄합니다. 결과에 책임지는 인간 전문가 그룹의 신뢰 생태계를 구축합니다.",
+    leadershipName: "사내이사 · 뉴욕주 변호사 범하나 (Hana Beom)",
     addrLabel: "A.",
-    address: "서울시 강남구 봉은사로 524, 웨스틴 서울 파르나스 B269-11",
+    address: "서울시 강남구 봉은사로 524, 웨스틴 서울 파르나스 B269-11호",
     visit: "Visit",
   },
   EN: {
     contact: "Contact",
-    heroName: "HANA BEOM",
-    heroTitle: "CEO · Attorney-at-Law, NY",
+    heroTagline: "Cross-Border Operations & Asset Proxy Care",
+    heroEntity: "THÉONÉ Co., Ltd.",
     venturesLabel: "Professional Venture",
     venture1Title: "Seoul Desk",
     venture1Body:
@@ -42,6 +53,10 @@ const content = {
     venture2Title: "Seoul Proxy",
     venture2Body:
       "Securing stable initial cash flow by delivering bespoke, non-face-to-face asset status reports of prime properties in Seoul for non-residents and overseas diaspora, while scaling into a comprehensive proxy platform that encompasses premium asset coaching, leasing, and high-end property development project management (PM).",
+    leadershipLabel: "Leadership Profile",
+    leadershipBody:
+      "Seamlessly integrating an engineer's structural precision with a New York attorney's international legal expertise to govern THÉONÉ's cross-border business operations (LPO) and premium proxy care infrastructure. Creating an ecosystem of trust driven by accountable human experts.",
+    leadershipName: "Hana Beom, Managing Director & Attorney-at-Law, NY",
     addrLabel: "A.",
     address: "B269-11, Bongeunsa-ro 524, Gangnam-gu, Seoul, Republic of Korea",
     visit: "Visit",
@@ -85,16 +100,19 @@ function Index() {
         </div>
       </header>
 
-      {/* Hero */}
+      {/* Hero — Corporate */}
       <section className="px-6 md:px-16 lg:px-24 pt-32 md:pt-48 pb-32 md:pb-48">
-        <div className="max-w-3xl mx-auto text-center">
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.05]">
-            {t.heroName}
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl leading-[1.02] tracking-tight">
+            THÉONÉ
           </h1>
-          <p className="mt-6 md:mt-8 text-xs md:text-sm uppercase tracking-[0.32em] text-muted-foreground">
-            {t.heroTitle}
+          <p className="mt-8 md:mt-10 text-xs md:text-sm uppercase tracking-[0.32em] text-muted-foreground">
+            {t.heroTagline}
           </p>
-          <div className="mt-12 md:mt-16 mx-auto w-24 divider-line" />
+          <div className="mt-12 md:mt-16 mx-auto w-24 divider-thin" />
+          <p className="mt-10 md:mt-12 font-serif text-lg md:text-xl">
+            {t.heroEntity}
+          </p>
         </div>
       </section>
 
@@ -106,9 +124,9 @@ function Index() {
               01 / {t.venturesLabel}
             </span>
           </div>
-          <div className="divider-line mb-16 md:mb-20" />
+          <div className="divider-thin mb-16 md:mb-20" />
 
-          <div className="grid md:grid-cols-2 gap-12 md:gap-20">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16">
             <VentureCard
               title={t.venture1Title}
               body={t.venture1Body}
@@ -125,16 +143,37 @@ function Index() {
         </div>
       </section>
 
+      {/* Leadership Profile */}
+      <section className="px-6 md:px-16 lg:px-24 pb-32 md:pb-48">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-baseline justify-between mb-10">
+            <span className="text-[11px] uppercase tracking-[0.32em] text-muted-foreground">
+              02 / {t.leadershipLabel}
+            </span>
+          </div>
+          <div className="divider-thin mb-16 md:mb-20" />
+
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-[15px] md:text-[17px] leading-[1.9] text-foreground/90">
+              {t.leadershipBody}
+            </p>
+            <div className="mt-10 md:mt-12 mx-auto w-16 divider-thin" />
+            <p className="mt-8 font-serif text-lg md:text-xl">
+              {t.leadershipName}
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Footer / Contact */}
       <footer id="contact" className="px-6 md:px-16 lg:px-24 pb-16 md:pb-24">
         <div className="max-w-6xl mx-auto">
-          <div className="divider-line mb-12 md:mb-16" />
+          <div className="divider-thin mb-12 md:mb-16" />
           <div className="grid md:grid-cols-12 gap-10 md:gap-8 items-start">
             <div className="md:col-span-4">
               <div className="font-serif text-3xl md:text-4xl">THÉONÉ</div>
               <p className="mt-3 text-xs uppercase tracking-[0.28em] text-muted-foreground">
-                {t.heroTitle}
+                {t.heroTagline}
               </p>
             </div>
 
@@ -142,7 +181,7 @@ function Index() {
               <FooterField label="E.">
                 <a
                   href="mailto:hana.beom@theo-ne.com"
-                  className="relative inline-block font-serif text-lg md:text-xl after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-foreground hover:opacity-70 transition-opacity break-all"
+                  className="relative inline-block font-serif text-base md:text-lg after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[1px] after:bg-foreground hover:opacity-70 transition-opacity break-all"
                 >
                   hana.beom@theo-ne.com
                 </a>
@@ -162,7 +201,7 @@ function Index() {
           </div>
 
           <div className="mt-16 md:mt-24 flex items-center justify-between text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
-            <span>© {new Date().getFullYear()} THÉONÉ</span>
+            <span>© {new Date().getFullYear()} THÉONÉ Co., Ltd.</span>
             <span>Seoul · New York</span>
           </div>
         </div>
@@ -183,7 +222,7 @@ function VentureCard({
   visit: string;
 }) {
   return (
-    <article className="group border border-foreground/85 p-8 md:p-10 flex flex-col h-full">
+    <article className="group border border-foreground/20 p-8 md:p-12 flex flex-col h-full">
       <a
         href={href}
         target="_blank"
@@ -208,7 +247,6 @@ function VentureCard({
     </article>
   );
 }
-
 
 function FooterField({ label, children }: { label: string; children: React.ReactNode }) {
   return (

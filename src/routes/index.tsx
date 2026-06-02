@@ -46,7 +46,6 @@ const content = {
     contact: "Contact",
     heroTagline: "LEGAL TECH & CROSS-BORDER OPERATIONS",
     heroEntity: "In Development",
-    heroStatus: "[ In Development ]",
     venturesLabel: "Professional Venture",
     venture1Title: "Seoul Desk",
     venture1Body:

@@ -50,14 +50,16 @@
 
 .divider-line {
   display: block;
-  height: 2px;
+  height: 1px;
   background-color: var(--accent-line);
+  opacity: 0.25;
   width: 100%;
 }
 
 .divider-thin {
+  display: block;
   height: 1px;
   background-color: var(--accent-line);
-  opacity: 0.5;
+  opacity: 0.2;
   width: 100%;
 }

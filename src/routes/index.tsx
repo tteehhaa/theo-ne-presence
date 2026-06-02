@@ -26,7 +26,7 @@ const content = {
   KO: {
     contact: "Contact",
     heroTagline: "리걸 테크 & 크로스보더 오퍼레이션",
-    heroEntity: "주식회사 테오네",
+    heroEntity: "법인 설립 준비 중",
     heroStatus: "[ 법인 설립 준비 중 ]",
     venturesLabel: "Professional Venture",
     venture1Title: "서울 데스크",

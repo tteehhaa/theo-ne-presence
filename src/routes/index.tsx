@@ -125,23 +125,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Subtle Taste */}
-      <section className="px-6 md:px-16 lg:px-24 pb-32 md:pb-48">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-baseline justify-between mb-10">
-            <span className="text-[11px] uppercase tracking-[0.32em] text-muted-foreground">
-              02 / {t.tasteLabel}
-            </span>
-          </div>
-          <div className="divider-line mb-16 md:mb-20" />
-
-          <div className="border-t border-b">
-            <TasteRow title={t.taste1Title} body={t.taste1Body} index="i." />
-            <div className="divider-thin" />
-            <TasteRow title={t.taste2Title} body={t.taste2Body} index="ii." />
-          </div>
-        </div>
-      </section>
 
       {/* Footer / Contact */}
       <footer id="contact" className="px-6 md:px-16 lg:px-24 pb-16 md:pb-24">
@@ -226,19 +209,6 @@ function VentureCard({
   );
 }
 
-function TasteRow({ title, body, index }: { title: string; body: string; index: string }) {
-  return (
-    <div className="grid grid-cols-12 gap-4 md:gap-8 py-8 md:py-10 items-baseline">
-      <span className="col-span-1 font-serif text-sm md:text-base text-muted-foreground">
-        {index}
-      </span>
-      <h3 className="col-span-11 md:col-span-4 font-serif text-xl md:text-2xl">{title}</h3>
-      <p className="col-start-2 col-span-11 md:col-span-7 md:col-start-auto text-[14px] md:text-[15px] leading-[1.8] text-foreground/80">
-        {body}
-      </p>
-    </div>
-  );
-}
 
 function FooterField({ label, children }: { label: string; children: React.ReactNode }) {
   return (

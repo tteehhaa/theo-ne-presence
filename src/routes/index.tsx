@@ -42,11 +42,6 @@ const content = {
     venture2Title: "Seoul Proxy",
     venture2Body:
       "Securing stable initial cash flow by delivering bespoke, non-face-to-face asset status reports of prime properties in Seoul for non-residents and overseas diaspora, while scaling into a comprehensive proxy platform that encompasses premium asset coaching, leasing, and high-end property development project management (PM).",
-    tasteLabel: "Subtle Taste",
-    taste1Title: "French Literature & Art",
-    taste1Body: "Textual inspiration drawn from classical French literature and scholarly research.",
-    taste2Title: "Mindfulness & Motion",
-    taste2Body: "Yoga and meditation for inner stillness, and the dynamic life of skiing across alpine snow.",
     addrLabel: "A.",
     address: "B269-11, Bongeunsa-ro 524, Gangnam-gu, Seoul, Republic of Korea",
     visit: "Visit",

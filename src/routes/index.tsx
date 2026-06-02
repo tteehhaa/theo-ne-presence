@@ -46,7 +46,7 @@ const content = {
   EN: {
     contact: "Contact",
     heroTagline: "LEGAL TECH & CROSS-BORDER OPERATIONS",
-    heroEntity: "THÉONÉ Co., Ltd.",
+    heroEntity: "In Development",
     heroStatus: "[ In Development ]",
     venturesLabel: "Professional Venture",
     venture1Title: "Seoul Desk",

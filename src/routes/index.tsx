@@ -114,9 +114,9 @@ function Index() {
             {t.heroTagline}
           </p>
           <div className="mt-12 md:mt-16 mx-auto w-24 divider-thin" />
-          <p className="mt-10 md:mt-12 font-serif text-lg md:text-xl">
+          <span className="mt-10 md:mt-12 inline-block border border-foreground/30 px-4 py-1.5 text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             {t.heroEntity}
-          </p>
+          </span>
         </div>
       </section>
 

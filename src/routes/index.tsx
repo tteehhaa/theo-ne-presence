@@ -25,22 +25,24 @@ export const Route = createFileRoute("/")({
 const content = {
   KO: {
     contact: "Contact",
-    heroTagline: "리걸 테크 & 크로스보더 오퍼레이션",
+    heroTagline: "LEGAL TECH & CROSS-BORDER OPERATIONS",
     heroEntity: "법인 설립 준비 중",
     venturesLabel: "Professional Venture",
     venture1Title: "서울 데스크",
     venture1Body:
-      "리걸테크를 기반으로 국내외 로펌 네트워크 연계 및 NDA 법무 검토를 원스톱으로 지원하며, 해외 기업의 국내 인바운드·국내 기업의 글로벌 아웃바운드를 지원하는 크로스보더 비즈니스 오퍼레이션(LPO) 서비스를 구축합니다.",
+      "리걸테크 기반으로 국내외 로펌 네트워크 연계 및 NDA 법무 검토를 원스톱으로 지원하며, 해외 기업의 국내 인바운드·국내 기업의 글로벌 아웃바운드를 지원하는 크로스보더 비즈니스 오퍼레이션(LPO) 서비스를 구축합니다.",
     venture2Title: "서울 프록시",
     venture2Body:
       "해외 거주 자산가 및 교포를 대상으로 서울 주요 자산에 대한 맞춤형 실황 분석 리포트를 비대면으로 제공하고, 국내 자산 관리를 위한 프리미엄 자산 컨설팅 서비스로 도약합니다.",
     leadershipLabel: "Leadership Profile",
     leadershipBody:
-      "엔지니어로서의 정밀한 트렌드 감지 및 시장 분석 능력과, 뉴욕주 변호사로서 갖춘 국제 법무 전문성을 결합하여, 주식회사 테오네의 크로스보더 오퍼레이션(LPO) 및 자산 컨설팅 인프라를 총괄합니다. 전문성과 신뢰를 중심으로 한 비즈니스 파트너십을 지향합니다.",
-    leadershipName: "사내이사 · 뉴욕주 변호사 범하나 (Hana Beom)",
+      "엔지니어로서의 정밀한 트렌드 파악 및 시장 분석 능력과, 뉴욕주 변호사로서의 국제 법무 전문성을 결합하여 주식회사 테오네의 크로스보더 오퍼레이션(LPO) 및 자산 컨설팅 인프라를 총괄합니다.",
+    leadershipName: "범하나 대표 · 뉴욕주 변호사",
     addrLabel: "A.",
-    address: "서울시 강남구 봉은사로 524, 웨스틴 서울 파르나스 B269-11호",
+    address:
+      "서울시 강남구 봉은사로 524, 더 웨스틴 서울 파르나스 B269-11",
     visit: "Visit",
+    locale: "SEOUL, REPUBLIC OF KOREA",
   },
   EN: {
     contact: "Contact",
@@ -52,14 +54,16 @@ const content = {
       "Leveraging legal tech to provide one-stop support for cross-border NDA reviews and law firm network coordination, building a cross-border business operations (LPO) service for inbound and outbound clients.",
     venture2Title: "Seoul Proxy",
     venture2Body:
-      "Delivering bespoke, non-face-to-face asset status reports on prime Seoul properties for non-residents and overseas Koreans, while scaling into a premium asset consulting service for domestic asset management.",
+      "Delivering bespoke, remote asset status reports on prime Seoul properties for non-residents and overseas Koreans, while scaling into a premium asset consulting service for domestic asset management.",
     leadershipLabel: "Leadership Profile",
     leadershipBody:
-      "Combining an engineer's sharp eye for trends and market analysis with a New York attorney's international legal expertise to lead THÉONÉ's cross-border operations (LPO) and asset consulting infrastructure. Committed to business partnerships built on expertise and trust.",
-    leadershipName: "Hana Beom, CEO & Attorney-at-Law, NY",
+      "Combining an engineer's sharp eye for trends and market analysis with a New York attorney's international legal expertise to lead THÉONÉ's cross-border operations (LPO) and asset consulting infrastructure.",
+    leadershipName: "Hana Beom — CEO & New York Attorney-at-Law",
     addrLabel: "A.",
-    address: "B269-11, Bongeunsa-ro 524, Gangnam-gu, Seoul, Republic of Korea",
+    address:
+      "B269-11, The Westin Seoul Parnas, Bongeunsa-ro 524, Gangnam-gu, Seoul, Republic of Korea",
     visit: "Visit",
+    locale: "SEOUL, REPUBLIC OF KOREA",
   },
 } as const;
 
@@ -110,9 +114,9 @@ function Index() {
             {t.heroTagline}
           </p>
           <div className="mt-12 md:mt-16 mx-auto w-24 divider-thin" />
-          <p className="mt-10 md:mt-12 font-serif text-lg md:text-xl">
+          <span className="mt-10 md:mt-12 inline-block border border-foreground/30 px-4 py-1.5 text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             {t.heroEntity}
-          </p>
+          </span>
         </div>
       </section>
 
@@ -153,11 +157,11 @@ function Index() {
           </div>
           <div className="divider-thin mb-16 md:mb-20" />
 
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto">
             <p className="text-[15px] md:text-[17px] leading-[1.9] text-foreground/90">
               {t.leadershipBody}
             </p>
-            <div className="mt-10 md:mt-12 mx-auto w-16 divider-thin" />
+            <div className="mt-10 md:mt-12 w-16 divider-thin" />
             <p className="mt-8 font-serif text-lg md:text-xl">
               {t.leadershipName}
             </p>
@@ -177,7 +181,7 @@ function Index() {
               </p>
             </div>
 
-            <div className="md:col-span-8 grid sm:grid-cols-3 gap-8">
+            <div className="md:col-span-8 grid sm:grid-cols-2 gap-8">
               <FooterField label="E.">
                 <a
                   href="mailto:hana.beom@theo-ne.com"
@@ -194,15 +198,17 @@ function Index() {
                   www.theo-ne.com
                 </a>
               </FooterField>
-              <FooterField label={t.addrLabel}>
-                <p className="text-sm md:text-[15px] leading-relaxed">{t.address}</p>
-              </FooterField>
+              <div className="sm:col-span-2">
+                <FooterField label={t.addrLabel}>
+                  <p className="text-sm md:text-[15px] leading-relaxed">{t.address}</p>
+                </FooterField>
+              </div>
             </div>
           </div>
 
           <div className="mt-16 md:mt-24 flex items-center justify-between text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span>© {new Date().getFullYear()} THÉONÉ Co., Ltd.</span>
-            <span>Seoul · New York</span>
+            <span>{t.locale}</span>
           </div>
         </div>
       </footer>

@@ -17,4 +17,7 @@ export default defineConfig({
   nitro: {
     preset: "vercel",
   },
+  vite: {
+    base: "/",
+  },
 });

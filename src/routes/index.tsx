@@ -181,7 +181,7 @@ function Index() {
               </p>
             </div>
 
-            <div className="md:col-span-8 grid sm:grid-cols-3 gap-8">
+            <div className="md:col-span-8 grid sm:grid-cols-2 gap-8">
               <FooterField label="E.">
                 <a
                   href="mailto:hana.beom@theo-ne.com"
@@ -198,15 +198,17 @@ function Index() {
                   www.theo-ne.com
                 </a>
               </FooterField>
-              <FooterField label={t.addrLabel}>
-                <p className="text-sm md:text-[15px] leading-relaxed">{t.address}</p>
-              </FooterField>
+              <div className="sm:col-span-2">
+                <FooterField label={t.addrLabel}>
+                  <p className="text-sm md:text-[15px] leading-relaxed">{t.address}</p>
+                </FooterField>
+              </div>
             </div>
           </div>
 
           <div className="mt-16 md:mt-24 flex items-center justify-between text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
             <span>© {new Date().getFullYear()} THÉONÉ Co., Ltd.</span>
-            <span>Seoul · New York</span>
+            <span>{t.locale}</span>
           </div>
         </div>
       </footer>

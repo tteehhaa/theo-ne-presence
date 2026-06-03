@@ -157,11 +157,11 @@ function Index() {
           </div>
           <div className="divider-thin mb-16 md:mb-20" />
 
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto">
             <p className="text-[15px] md:text-[17px] leading-[1.9] text-foreground/90">
               {t.leadershipBody}
             </p>
-            <div className="mt-10 md:mt-12 mx-auto w-16 divider-thin" />
+            <div className="mt-10 md:mt-12 w-16 divider-thin" />
             <p className="mt-8 font-serif text-lg md:text-xl">
               {t.leadershipName}
             </p>

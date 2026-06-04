@@ -179,28 +179,20 @@ function Index() {
               </p>
             </div>
 
-            <div className="md:col-span-8 grid sm:grid-cols-2 gap-8">
-              <FooterField label="E.">
-                <a
-                  href="mailto:hana.beom@theo-ne.com"
-                  className="relative inline-block font-serif text-base md:text-lg after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[1px] after:bg-foreground hover:opacity-70 transition-opacity break-all"
-                >
-                  hana.beom@theo-ne.com
-                </a>
-              </FooterField>
-              <FooterField label="W.">
-                <a
-                  href="https://www.theo-ne.com"
-                  className="text-sm md:text-base hover:opacity-60 transition-opacity"
-                >
-                  www.theo-ne.com
-                </a>
-              </FooterField>
-              <div className="sm:col-span-2">
-                <FooterField label={t.addrLabel}>
-                  <p className="text-sm md:text-[15px] leading-relaxed">{t.address}</p>
-                </FooterField>
-              </div>
+            <div className="md:col-span-8 flex flex-col gap-5">
+              <a
+                href="mailto:hana.beom@theo-ne.com"
+                className="relative self-start font-serif text-base md:text-lg after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[1px] after:bg-foreground hover:opacity-70 transition-opacity break-all"
+              >
+                hana.beom@theo-ne.com
+              </a>
+              <a
+                href="https://www.theo-ne.com"
+                className="text-sm md:text-[15px] hover:opacity-60 transition-opacity"
+              >
+                www.theo-ne.com
+              </a>
+              <p className="text-sm md:text-[15px] leading-relaxed">{t.address}</p>
             </div>
           </div>
 

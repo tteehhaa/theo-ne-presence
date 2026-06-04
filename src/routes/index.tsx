@@ -244,11 +244,3 @@ function VentureCard({
   );
 }
 
-function FooterField({ label, children }: { label: string; children: React.ReactNode }) {
-  return (
-    <div>
-      <div className="font-serif text-base mb-3 text-muted-foreground">{label}</div>
-      {children}
-    </div>
-  );
-}

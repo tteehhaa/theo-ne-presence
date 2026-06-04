@@ -38,7 +38,6 @@ const content = {
     leadershipBody:
       "엔지니어로서의 정밀한 트렌드 파악 및 시장 분석 능력과, 뉴욕주 변호사로서의 국제 법무 전문성을 결합하여 주식회사 테오네의 크로스보더 오퍼레이션(LPO) 및 자산 컨설팅 인프라를 총괄합니다.",
     leadershipName: "범하나 대표 · 뉴욕주 변호사",
-    addrLabel: "A.",
     address:
       "서울시 강남구 봉은사로 524, 더 웨스틴 서울 파르나스 B269-11",
     visit: "Visit",
@@ -59,7 +58,6 @@ const content = {
     leadershipBody:
       "Combining an engineer's sharp eye for trends and market analysis with a New York attorney's international legal expertise to lead THÉONÉ's cross-border operations (LPO) and asset consulting infrastructure.",
     leadershipName: "Hana Beom — CEO & New York Attorney-at-Law",
-    addrLabel: "A.",
     address:
       "B269-11, The Westin Seoul Parnas, Bongeunsa-ro 524, Gangnam-gu, Seoul, Republic of Korea",
     visit: "Visit",
@@ -181,28 +179,20 @@ function Index() {
               </p>
             </div>
 
-            <div className="md:col-span-8 grid sm:grid-cols-2 gap-8">
-              <FooterField label="E.">
-                <a
-                  href="mailto:hana.beom@theo-ne.com"
-                  className="relative inline-block font-serif text-base md:text-lg after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[1px] after:bg-foreground hover:opacity-70 transition-opacity break-all"
-                >
-                  hana.beom@theo-ne.com
-                </a>
-              </FooterField>
-              <FooterField label="W.">
-                <a
-                  href="https://www.theo-ne.com"
-                  className="text-sm md:text-base hover:opacity-60 transition-opacity"
-                >
-                  www.theo-ne.com
-                </a>
-              </FooterField>
-              <div className="sm:col-span-2">
-                <FooterField label={t.addrLabel}>
-                  <p className="text-sm md:text-[15px] leading-relaxed">{t.address}</p>
-                </FooterField>
-              </div>
+            <div className="md:col-span-8 flex flex-col gap-5">
+              <a
+                href="mailto:hana.beom@theo-ne.com"
+                className="relative self-start font-serif text-base md:text-lg after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[1px] after:bg-foreground hover:opacity-70 transition-opacity break-all"
+              >
+                hana.beom@theo-ne.com
+              </a>
+              <a
+                href="https://www.theo-ne.com"
+                className="text-sm md:text-[15px] hover:opacity-60 transition-opacity"
+              >
+                www.theo-ne.com
+              </a>
+              <p className="text-sm md:text-[15px] leading-relaxed">{t.address}</p>
             </div>
           </div>
 
@@ -254,11 +244,3 @@ function VentureCard({
   );
 }
 
-function FooterField({ label, children }: { label: string; children: React.ReactNode }) {
-  return (
-    <div>
-      <div className="font-serif text-base mb-3 text-muted-foreground">{label}</div>
-      {children}
-    </div>
-  );
-}

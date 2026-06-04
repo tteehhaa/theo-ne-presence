@@ -26,5 +26,10 @@ jobs:
       - name: Build project
         run: bun run build
 
+      - name: Configure Git Author
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Deploy to gh-pages
         run: bun run deploy

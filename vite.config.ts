@@ -5,9 +5,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [
-    tanstackStartVite({
-      deployment: "netlify"
-    }),
+    tanstackStartVite(),
     react()
   ],
   resolve: {
@@ -15,4 +13,9 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    outDir: "dist",
+    minify: "esbuild",
+    sourcemap: false
+  }
 });
